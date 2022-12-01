@@ -112,7 +112,7 @@ main {
 main .img-biografia img {
   margin: 20px 0;
   max-height: auto;
-  width: 100%;
+  width: calc(100% - 90px);
 }
 main .biografia {
   display: flex;
