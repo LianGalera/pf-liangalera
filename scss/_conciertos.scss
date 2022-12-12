@@ -1,0 +1,27 @@
+
+.container-table {
+    table {
+        margin-top: 150px;
+        margin-left: auto;
+        margin-right: auto;
+
+        border-collapse: collapse;
+
+        tbody {
+            tr {
+                td {
+                    padding: 20px;
+                    border: 1px $color-secundario solid;
+
+                    p {
+                        font-weight: 400;
+                    }
+
+                    span {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }    
+}

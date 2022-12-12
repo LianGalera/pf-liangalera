@@ -1,0 +1,64 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+
+$color-principal:#ffffff;
+$color-secundario:#757780;
+$font:'aclonica', sans-serif;
+
+.container-slider {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 150px;
+    box-shadow: 0 0 0 10px $color-principal,
+                0 15px 50px;
+    
+    overflow: hidden;
+    position: relative;
+
+    .slider {
+        height: 500px;
+        width: 500%;
+        margin-left: -100%;
+
+        display: flex;
+
+        .slider-section {
+            width: 100%;
+            height: 100%;
+
+            display: block;
+            text-align: center;
+        }
+
+        .album_no_visible {
+            left: 100%;
+        }
+    }
+
+    .slider-btn {
+        position: absolute;
+        text-align: center;
+        cursor: pointer;
+
+        width: 40px;
+        height: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        font-size: 30px;
+
+        &:hover {
+            color: $color-secundario;
+        }
+    }
+    
+    .slider-btn_right {
+        left: -10px;
+    }
+    
+    .slider-btn_left {
+        right: -10px;
+    }
+
+}
+

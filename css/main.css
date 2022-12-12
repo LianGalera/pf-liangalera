@@ -1,4 +1,144 @@
 @import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+.container-slider {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  margin-top: 150px;
+  box-shadow: 0 0 0 10px #ffffff, 0 15px 50px;
+  overflow: hidden;
+  position: relative;
+}
+.container-slider .slider {
+  height: 500px;
+  width: 500%;
+  margin-left: -100%;
+  display: flex;
+}
+.container-slider .slider .slider-section {
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-align: center;
+}
+.container-slider .slider .album_no_visible {
+  left: 100%;
+}
+.container-slider .slider-btn {
+  position: absolute;
+  text-align: center;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  font-size: 30px;
+}
+.container-slider .slider-btn:hover {
+  color: #757780;
+}
+.container-slider .slider-btn_right {
+  left: -10px;
+}
+.container-slider .slider-btn_left {
+  right: -10px;
+}
+
+.container-table table {
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+.container-table table tbody tr td {
+  padding: 20px;
+  border: 1px #757780 solid;
+}
+.container-table table tbody tr td p {
+  font-weight: 400;
+}
+.container-table table tbody tr td span {
+  font-weight: bold;
+}
+
+.galery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(350px, auto);
+  gap: 20px;
+}
+.galery-container .photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 800px) {
+  .galery-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 550px) {
+  .galery-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.form-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  margin-top: 90px;
+}
+.form-container .info-form h2 {
+  margin-bottom: 15px;
+  font-size: 35px;
+}
+.form-container .info-form p {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+.form-container .info-form .icon-form {
+  font-size: 17px;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+form .area, form textarea {
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 15px;
+  border: 1px solid #000000;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  outline: 0;
+}
+form .btn-send {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: 0;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+form .btn-send:hover {
+  background-color: #757780;
+}
+
+@media (max-width: 700px) {
+  .form-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 * {
   margin: 0;
   box-sizing: border-box;
@@ -9,7 +149,7 @@
 }
 
 .header {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   height: 80px;
   width: 100%;
   top: 0;
@@ -62,7 +202,7 @@
   display: none;
 }
 
-@media (max-width: 1035px) {
+@media (max-width: 1180px) {
   body {
     padding-top: 70px;
   }
@@ -78,7 +218,7 @@
     flex-direction: column;
     align-items: center;
     margin: 15px 0;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     position: fixed;
     top: 60px;
     width: 100%;

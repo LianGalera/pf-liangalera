@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redes-Duki</title>
+    <title>Contacto-Duki</title><!-- SEO -->
+    <meta name="description" content="Contactanos">
+    <meta name="keywords" content="Duki, Contacto, Email, Telefono, Ubicacion">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/main.css">
     <!-- JS -->
@@ -14,7 +16,7 @@
 <body>
     <header class="header">
         <nav class="nav">
-          <a href="../index.html" class="logo nav-link"><img src="../image/duki-logo.png" alt=""></a>
+          <a href="../index.html" class="logo nav-link"><img src="../image/duki-logo.png" alt="Logo de Duki con alas de angel y de murcielago a los costados"></a>
           <button class="nav-toggle" aria-label="Abrir menú">
             <i class="fas fa-bars"></i>
           </button>
@@ -34,11 +36,34 @@
             </li>
             <li class="nav-menu-item">
               <a href="#" class="nav-menu-link nav-link"
-                >REDES</a
+                >CONTACTO</a
               >
             </li>
           </ul>
         </nav>
     </header>
+
+    <div class="form-container">
+      <div class="info-form">
+        <h1>Contactanos</h1>
+        <p>Si quieres aportar informacion o contactarte con nosotros puedes dejar un mensaje aqui o comunicarte por la informaciond de debajo</p>
+        <div class="icon-form">
+          <i class="bi bi-telephone-fill">299-5-123-456</i>
+        </div>
+        <div class="icon-form">
+          <i class="bi bi-envelope-fill">liacorreo@gmail.com</i>
+        </div>
+        <div class="icon-form">
+          <i class="bi bi-geo-alt-fill">Argentina-Rio Negro</i>
+        </div>
+      </div>
+      <form>
+        <input class="area" type="text" name="name" placeholder="Nombre">
+        <input class="area" type="email" name="email"
+        placeholder="Email">
+        <textarea name="messaje" id="messaje" rows="10" placeholder="Ingresa tu Mensaje"></textarea>
+        <input class="btn-send" type="submit" value="Enviar" name="send">
+      </form>
+    </div>
 </body>
 </html>
